@@ -1,0 +1,113 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+/* Other styles... */
+
+.greeting {
+  font-family: 'Honk', sans-serif; /* Applying 'Honk' font to the h1 element */
+  font-size: 2em;
+  color: #333;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff69b4; /* Hot Pink, because why not? */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  background-color: #d45a9e; /* Lighter pink on hover */
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+
+.message {
+  font-family: 'Lovers Quarrel', sans-serif; /* A playful font, feel free to change it */
+  font-size: 2.5em;
+  color: #ff69b4; /* Hot Pink color, you can choose your girlfriend's favorite color */
+  margin-top: 10px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.container1 {
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1000px; /* Adjust the maximum width as needed */
+  margin: 0 auto;
+}
+
+.eyeimage {
+  flex: 0 0 40%;
+  margin: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.eyeimage img {
+  width: 100%;
+  height: 220px; /* Set a specific height for uniformity */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-radius: 8px;
+}
+/* Add these styles to your existing stylesheet */
+.fboy img {
+  width: 150px; /* Set the desired width */
+  height: auto;
+  border-radius: 8px;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-link {
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
+  }
+
+  .message {
+    font-size: 1.8em; /* Adjust font size for smaller screens */
+  }
+  .eyeimage{
+    flex: 0 0 30%;
+  }
+  .eyeimage img {
+    height: 130px;
+  }
+}
